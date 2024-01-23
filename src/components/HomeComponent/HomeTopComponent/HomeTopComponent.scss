@@ -1,0 +1,31 @@
+.home-top-container{
+    // background-color: black;
+    min-height: 100vh;
+    background-image: url('../../../assets/image/background/bg_home_1.jpg');
+    min-width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    .home-top-content{
+        margin-top: 10em;
+        color: #fff;
+        font-weight: 600;
+
+        .title{
+            margin-left: 10vw;
+            font-size: 2.8rem;
+            .title-other-color{
+                color: #52D3D8;
+            }
+            margin-bottom: 0.5rem;
+        }
+        .introduce-content{
+            width: 65vw;
+            margin-left: 13vw;
+            font-size: 1.6rem;
+            opacity: 0.9;
+        }
+    }
+}

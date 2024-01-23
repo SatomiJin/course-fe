@@ -1,0 +1,13 @@
+.profile-user-container{
+    background-color: rgba($color: #181c2c, $alpha: 1);
+    min-height: 75.5vh;
+    padding: 2rem;
+    .profile-user-body{
+        .body-left{
+            min-height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

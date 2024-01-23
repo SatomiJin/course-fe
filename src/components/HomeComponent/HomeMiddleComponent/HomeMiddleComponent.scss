@@ -1,0 +1,87 @@
+.home-middle-container {
+    color: #fff;
+
+    //    background-color: red;
+    .home-middle-content {
+        min-height: 70vh;
+        background-color: rgba(2, 2, 51, 0.85);
+
+        // background-color: #0000FF99;
+        .home-middle-content-title {
+            padding: 1.5rem 0;
+            font-size: 2rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content {
+            .content-left {
+                min-height: 50vh;
+                display: flex;
+                justify-content: center;
+                padding: 2rem 0;
+
+                .content-left-img {
+                    min-width: 35rem;
+                    background-image: url('../../../assets/image/home-image/robot.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            .content-right {
+
+                .content-right-des {
+                    padding: 2rem;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        margin-bottom: 0.5rem;
+                       
+
+                        .image-1 {
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 4rem;
+                            height: 4rem;
+                            background-image: url('../../../assets/image/icon/ai.png');
+                        }
+                        .image-2{
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 4rem;
+                            height: 4rem;
+                            background-image: url('../../../assets/image/icon/avatar.png');
+                        }
+                        .image-3{
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 4rem;
+                            height: 4rem;
+                            background-image: url('../../../assets/image/icon/communication.png');
+                        }
+                        span {
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .description {
+                        margin-top: 0.4rem;
+                        font-size: 1.2rem;
+                        text-overflow: ellipsis;
+                        color: #52D3D8;
+                    }
+                }
+            }
+        }
+    }
+}

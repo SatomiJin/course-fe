@@ -1,0 +1,82 @@
+.offcanvas {
+    .offcanvas-header {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        background-image: radial-gradient(circle 897px at 9% 80.3%, rgba(55, 60, 245, 1) 0%, rgba(234, 161, 15, 0.90) 100.2%);
+        color: #fff;
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+
+    .offcanvas-body {
+        .offcanvas-body-top {
+            box-shadow: 0px 2px 0px 0px rgba(99, 99, 99, 0.2);
+            padding: 1rem 0 2rem 0;
+
+            .image-user {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 1px solid #ccc;
+
+                .image {
+                    background-image: url('../../assets/image/user-avatar-default/user-avatar.jpg');
+                    height: 6rem;
+                    width: 6rem;
+                    border-radius: 50%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            .user-info {
+
+                // display: flex;
+                // // justify-content: center;
+                // align-items: center;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    list-style-type: none;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    line-height: 2.5rem;
+
+                    li {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .offcanvas-body-bottom {
+            margin-top: 2rem;
+            padding: 0 1rem;
+
+            .options {
+                display: flex;
+                gap: 1rem;
+
+                button {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    transition: all .2s ease-in;
+                    border: 1px solid #ccc;
+
+                    &:hover {
+                        background-image: radial-gradient(circle 897px at 9% 80.3%, rgba(55, 60, 245, 1) 0%, rgba(234, 161, 15, 0.90) 100.2%);
+                        color: #fff;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

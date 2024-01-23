@@ -1,0 +1,37 @@
+.user-options-container {
+    .user-options-content {
+        .btn-dropdown {
+            background-color: #0dcaf0;
+            min-width: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .user-name {
+                font-weight: 600;
+            }
+
+            .user-image {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+
+        .dropdown-menu {
+            font-size: 1.3rem;
+
+            .dropdown-item {
+                transition: all .1s ease-in-out;
+
+                &:hover {
+                    background-color: #0000007d;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

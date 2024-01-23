@@ -1,0 +1,97 @@
+.home-bottom-container {
+    padding: 2rem 0;
+    min-height: 50vh;
+    // background-color: ;
+    background-color: rgba(2, 2, 51, 0.85);
+
+    .home-bottom-content {
+        .content-left {
+            padding-left: 7rem;
+
+            .content-left-logo {
+                background-image: url('../../../assets/image/logo/logo.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 20rem;
+                height: 10rem;
+                // background-size: cover;
+            }
+
+            .content-left-descriptions {
+                font-size: 1.3rem;
+                color: #fff;
+                padding-left: 1rem;
+                font-weight: 600;
+            }
+
+            .content-left-contact {
+                padding-left: 1rem;
+                margin-top: 1rem;
+                display: flex;
+                gap: 1rem;
+
+                i {
+                    font-size: 3rem;
+                    box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .fa-facebook {
+                    color: rgb(59, 89, 152);
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+
+                .fa-youtube {
+                    color: rgb(255, 0, 0);
+                    background-color: #fff;
+                    border-radius: 0.2rem;
+                }
+
+                .fa-twitter {
+                    color: rgb(29, 161, 242);
+                    background-color: #fff;
+                    border-radius: 0.2rem;
+                }
+
+                .fa-twitch {
+                    color: #DC84F3;
+                    background-color: #fff;
+                    border-radius: 0.2rem;
+                }
+            }
+        }
+
+        .content-right {
+            color: #fff;
+            font-size: 1.5rem;
+            display: flex;
+            // align-items: center;
+            // justify-content: center;
+            .col-4 {
+                ul {
+                    list-style-type: none;
+
+                    .title {
+                        color: #52D3D8;
+                        font-size: 1.7rem;
+                        font-weight: 600;
+                    }
+                    line-height: 3rem;
+
+                    li {
+                        transition: transform 0.3s all;
+                        width: fit-content;
+                        &:hover{
+                            cursor: pointer;
+                            color: #7FC7D9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

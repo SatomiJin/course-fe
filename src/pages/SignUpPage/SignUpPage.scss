@@ -1,0 +1,68 @@
+.sign-up-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/image/background/galaxy.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: optimizeQuality;
+    .sign-up-box {
+        width: 60vw;
+        background-color: #fff;
+        // min-height: 70vh;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px s5px;
+        font-size: 1.2rem;
+        .sign-up-logo {
+            // width: 4rem;
+            height: 3rem;
+            background-image: url('../../assets/image/logo/logo_sign_up.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .sign-up-title {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 600;
+            color: #5FBDFF;
+        }
+        .sign-up-form{
+            .form-group{
+                margin-bottom: 0.4rem;
+            }
+            .list-button{
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+                gap: 1rem;
+                .btn{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    min-width: 10em;
+                    transition: all .3s ease-in-out;
+                }
+                .btn-register{
+                    background-color: #5FBDFF;
+                    color: #fff;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+                .btn-back{
+                    border: 1px solid #000;
+                    &:hover{
+                        background-color: #0000007d;
+                        color: #fff;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

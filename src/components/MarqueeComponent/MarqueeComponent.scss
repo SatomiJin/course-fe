@@ -1,0 +1,20 @@
+@keyframes slide {
+    0% {
+        transform: translateX(-230%);
+    }
+
+    100% {
+        transform: translateX(120%);
+    }
+}
+
+
+.slide-text {
+    gap: 1rem;
+    display: flex;
+    img{
+        width: 5rem;
+        height: 5rem;
+    }
+    animation: slide 20s infinite;
+}

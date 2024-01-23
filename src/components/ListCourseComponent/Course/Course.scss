@@ -1,0 +1,24 @@
+.card-course-container {
+    .card {
+        border-radius: 1rem !important;
+
+        .card-img-top {
+            border-radius: 1rem !important;
+
+        }
+        .card-body{
+            .card-title{
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+           
+        }
+        .card-body{
+            .price-of-course{
+                color: #0B60B0;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

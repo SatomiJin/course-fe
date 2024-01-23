@@ -1,0 +1,42 @@
+.user-info-card-container {
+    min-height: 15rem;
+    min-width: 100%;
+    border-radius: 1rem;
+    background-color: rgba($color: #fff, $alpha: 0.7);
+
+    .content-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .content-left-image {
+            background-image: url("../../../assets/image/user-avatar-default/group-profile-avatar-icon-default-social-media-forum-profile-photo-vector.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+        }
+    }
+
+    .content-right {
+        font-size: 1.5rem;
+        font-weight: 600;
+        .content-right-list {
+            height: 100%;
+            ul {
+                list-style-type: none;
+                li {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-wrap: break-word;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                }
+            }
+        }
+    }
+}

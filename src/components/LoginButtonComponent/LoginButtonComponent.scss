@@ -1,0 +1,27 @@
+.login-button-container{
+    .list-button{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        button{
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        .btn-login{
+            border: 1px solid #fff;
+            padding: 0 1.5rem;
+            transition: 0.3s all;
+            &:hover{
+                color: #0dcaf0;
+                border: 1px solid #0dcaf0;
+            }
+        }
+        .btn-res{
+            // padding: 0 2rem;
+            transition: all 0.3s;
+             &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.user-container{
+    .user-image{}
+    .user-information{
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: 600;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: #52D3D8;
+            cursor: pointer;
+        }
+    }
+}

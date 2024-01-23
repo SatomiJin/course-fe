@@ -1,0 +1,83 @@
+.header-component-container {
+    display: flex;
+    justify-content: center;
+    background-color: #181c2c;
+    padding: 1rem;
+    .header-content {
+
+        .header-logo {
+            background-image: url('../../..///assets/image/logo/logo_sign_up.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            // width: 5rem;
+            height: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .header-nav {
+            background-color: #ba3e60;
+            width: 100vw;
+            .header-nav-left{
+                display: flex;
+                justify-content: center;
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                    justify-content: center;
+                    color: #fff;
+                    gap: 1.5rem;
+                    font-weight: 600;
+    
+                    li {
+                        font-size: 1.3rem;
+                        display: inline-block;
+                        position: relative;
+                        padding: 1rem 0 1rem 0;
+                        overflow: hidden;
+                        transition: transform 0.3s ease;
+                        text-transform: capitalize;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 0.2rem;
+                            background-color: #52D3D8;
+                            transform: scaleX(0);
+                            /* Bắt đầu với chiều dài 0 */
+                            transform-origin: bottom right;
+                            transition: transform 0.3s ease;
+                        }
+    
+                        &:hover::before {
+                            transform: scaleX(1);
+                            /* Khi hover, mở rộng chiều dài của underline */
+                            transform-origin: bottom left;
+                        }
+    
+                        &:hover {
+                            color: #52D3D8;
+                            cursor: pointer;
+                            
+                        }
+    
+    
+    
+                        &.active {
+                            color: #52D3D8;
+                            border-bottom: 0.2rem solid #52D3D8;
+                        }
+                    }
+    
+                }
+            }
+            .header-nav-right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
