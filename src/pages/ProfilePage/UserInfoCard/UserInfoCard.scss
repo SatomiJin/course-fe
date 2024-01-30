@@ -1,16 +1,24 @@
 .user-info-card-container {
     min-height: 15rem;
-    min-width: 100%;
+    min-width: 60vw;
     border-radius: 1rem;
     background-color: rgba($color: #fff, $alpha: 0.7);
+    box-shadow: rgb(112, 111, 111) 1.95px 1.95px 2.6px;
 
     .content-left {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        line-height: 1rem;
+        // border: 1px solid red;
+
+        button {
+            font-weight: 600;
+        }
 
         .content-left-image {
+
             background-image: url("../../../assets/image/user-avatar-default/group-profile-avatar-icon-default-social-media-forum-profile-photo-vector.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -18,16 +26,26 @@
             width: 10rem;
             height: 10rem;
             border-radius: 50%;
+            transition: all .3s ease;
+
+            &:hover {
+                border: 1px solid black;
+                cursor: pointer;
+            }
         }
     }
 
     .content-right {
         font-size: 1.5rem;
         font-weight: 600;
+        display: flex;
+        align-items: center;
         .content-right-list {
-            height: 100%;
+            
             ul {
                 list-style-type: none;
+                line-height: 3rem;
+
                 li {
                     white-space: nowrap;
                     overflow: hidden;

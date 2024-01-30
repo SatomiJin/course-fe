@@ -32,7 +32,7 @@ function App() {
     if (decoded && decoded.email) {
       handleGetDetailUser(decoded.email, storageData);
     }
-  }, []);
+  }, [user]);
   const handleGetDetailUser = async (email, token) => {
     let storageRefreshToken = localStorage.getItem("refresh_token");
     let refreshToken = JSON.parse(storageRefreshToken);

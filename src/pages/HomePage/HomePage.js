@@ -2,7 +2,7 @@ import HomeBottomComponent from "../../components/HomeComponent/HomeBottomCompon
 import HomeMiddleComponent from "../../components/HomeComponent/HomeMiddleComponent/HomeMiddleComponent";
 import HomeTopComponent from "../../components/HomeComponent/HomeTopComponent/HomeTopComponent";
 import Achievement from "../../components/animations/Achievement";
-import ".//HomePage.scss";
+import "./HomePage.scss";
 function HomePage() {
   return (
     <div className="home-page-container">

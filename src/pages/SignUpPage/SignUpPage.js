@@ -126,8 +126,7 @@ function SignUpPage() {
             <label>Gender:</label>
             <select
               className="form-select"
-              onChange={(e) => handleOnchange(e)}
-              name="gender"
+            c
               value={detailSignUp?.gender}
             >
               <option value="male">Male</option>

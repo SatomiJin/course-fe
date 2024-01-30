@@ -1,4 +1,4 @@
-import ".//ListCourseComponent.scss";
+import "./ListCourseComponent.scss";
 import Course from "./Course/Course";
 function ListCourseComponent() {
   return (

@@ -1,0 +1,68 @@
+.user-info-form-container {
+    background-color: rgba($color: #fff, $alpha: 0.7);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 70vw;
+
+    .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .user-info-form-content {
+        .form-group {
+            margin-bottom:1rem;
+        }
+
+        .user-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .user-avatar {
+                width: 5rem;
+                height: 5rem;
+                background-image: url("../../../assets/image/user-avatar-default/user-avatar.jpg");
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    border: 1px solid black;
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                transition: all .3s ease-in-out;
+                // font-size: 1.3rem;
+                height: fit-content;
+                width: fit-content;
+                background-color: #fff;
+
+                &:hover {
+                    color: #fff;
+                    background-color: rgba($color: #000000ad, $alpha: 0.3);
+                }
+
+                label {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .btn-changes-info {
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+
+
+    }
+}

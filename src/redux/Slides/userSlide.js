@@ -25,7 +25,7 @@ export const userSlide = createSlice({
         image = "",
         access_token = "",
         role = "R3",
-        refresh_token = "",
+        refreshToken = "",
         gender = "",
       } = action.payload;
       state.firstName = firstName ? firstName : state.firstName;
@@ -36,7 +36,7 @@ export const userSlide = createSlice({
       state.image = image ? image : state.image;
       state.access_token = access_token ? access_token : state.access_token;
       state.role = role ? role : state.role;
-      state.refresh_token = refresh_token ? refresh_token : state.refresh_token;
+      state.refresh_token = refreshToken ? refreshToken : state.refreshToken;
     },
     resetUser: (state) => {
       state.firstName = "";
