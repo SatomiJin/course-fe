@@ -3,7 +3,7 @@ const Achievement = () => {
   return (
     <div className="achievement-container">
       <div className="container py-5">
-        <div className="achievement-content row" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <div className="achievement-content row">
           <div className="achievement-content-block col-3">
             <div className="block">
               <div className="achievement-content-icon">

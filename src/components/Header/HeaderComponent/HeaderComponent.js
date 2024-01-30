@@ -27,7 +27,7 @@ function HeaderComponent() {
       <div className="header-content">
         <div className="header-logo"></div>
         <div className="header-nav row">
-          <div className="header-nav-left col-10">
+          <div className="header-nav-left col-8">
             <ul>
               {constants.navItem.map((itemNav, index) => {
                 return (
@@ -42,7 +42,7 @@ function HeaderComponent() {
               })}
             </ul>
           </div>
-          <div className="header-nav-right col-2">
+          <div className="header-nav-right col-4">
             <User />
           </div>
         </div>
