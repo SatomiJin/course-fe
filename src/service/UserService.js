@@ -14,10 +14,17 @@ export const getDetailUser = async (data) => {
       email: data.email,
     },
   });
-
   return res.data;
 };
-
+export const getAllUser = async (data) => {
+  let res = await axios.get(`${process.env.REACT_APP_API_URL}user/get-all-user`, {
+    headers: {
+      token: `Bearer ${data.token}`,
+      email: data.email,
+    },
+  });
+  return res.data;
+};
 // /refresh-token
 export const refreshTokenService = async (refresh_token) => {
   let res = await axios.post(`${process.env.REACT_APP_API_URL}user/refresh-token`, {

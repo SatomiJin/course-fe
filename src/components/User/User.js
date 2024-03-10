@@ -67,7 +67,7 @@ function User() {
             </li>
             {user && user.role === "R1" && (
               <li>
-                <Link className="dropdown-item">
+                <Link className="dropdown-item" to="/system/admin">
                   <i className="fa-solid fa-gears"></i> Management System
                 </Link>
               </li>

@@ -8,4 +8,11 @@
         font-weight: 600;
         padding: 2rem;
     }
+    .list-component-body {
+        .body-list-course{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+    }
 }

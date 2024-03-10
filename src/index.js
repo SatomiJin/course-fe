@@ -6,6 +6,7 @@ import "aos/dist/aos.js";
 import "./style/index.css";
 import App from "./App";
 
+import "animate.css";
 import { Provider } from "react-redux";
 import { persistor, store } from "./redux/store";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";

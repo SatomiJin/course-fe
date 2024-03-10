@@ -1,9 +1,11 @@
 import "./Achievement.scss";
+import { useNavigate } from "react-router-dom";
 const Achievement = () => {
+  let navigate = useNavigate();
   return (
     <div className="achievement-container">
       <div className="container py-5">
-        <div className="achievement-content row">
+        <div className="achievement-content row" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
           <div className="achievement-content-block col-3">
             <div className="block">
               <div className="achievement-content-icon">
@@ -44,7 +46,9 @@ const Achievement = () => {
             </div>
           </div>
           <div className="achievement-content-button">
-            <button className="btn btn-info btn-lg">Learn programming now!</button>
+            <button onClick={() => navigate("/learning")} className="btn btn-info btn-lg">
+              Learn programming now!
+            </button>
           </div>
         </div>
       </div>

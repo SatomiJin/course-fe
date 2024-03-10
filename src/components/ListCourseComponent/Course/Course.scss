@@ -1,17 +1,21 @@
 .card-course-container {
     .card {
         border-radius: 1rem !important;
-
+        min-width: 23vw;
+        min-height: 30vh;
+        transition: all .3s ease-in-out;
+        &:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
         .card-img-top {
             border-radius: 1rem !important;
-
         }
         .card-body{
             .card-title{
                 font-size: 1.3rem;
                 font-weight: 600;
             }
-           
         }
         .card-body{
             .price-of-course{

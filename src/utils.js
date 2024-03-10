@@ -26,3 +26,13 @@ export const getBase64 = (file) => {
     reader.onerror = (error) => reject(error);
   });
 };
+
+export const handleGetVideoIdYb = (url) => {
+  let urlSplit = "";
+  let urlSplit2 = "";
+  if (url) {
+    urlSplit = url.split("v=")[1];
+    urlSplit2 = urlSplit.split("&");
+    return urlSplit2[0];
+  }
+};

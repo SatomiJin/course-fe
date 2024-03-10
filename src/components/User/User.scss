@@ -1,39 +1,40 @@
 .user-container {
-    .offcanvas-container {
-        .dropdown {
-            button {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                color: #FFD0EC;
-                font-size: 1.3rem;
-                font-weight: 600;
-                border-radius: 1rem !important;
-                background-color: #81689D;
-                .user-image {
-                    width: 3rem;
-                    height: 3rem;
-                    background-image: url('../../assets/image/user-avatar-default/user-avatar.jpg');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    border-radius: 50%;
-                }
-            }
-
-            ul {
-                width: 15vw;
-                text-align: justify;
-                font-size: 1.3rem;
-                .dropdown-item{
-                    font-weight: 600 !important;
-                    transition: all .3s ease !important;
-                    &:hover{
-                        background-color: rgba($color: #000000, $alpha: 0.3);
-                    }
-                    
-                }
-            }
+  .offcanvas-container {
+    .dropdown {
+      button {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #ffd0ec;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border-radius: 1rem !important;
+        background-color: #81689d;
+        .user-image {
+          width: 3rem;
+          height: 3rem;
+          background-image: url("../../assets/image/user-avatar-default/user-avatar.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 50%;
         }
+      }
+
+      ul {
+        width: 15vw;
+        text-align: justify;
+        font-size: 1.3rem;
+        min-width: 250px;
+        .dropdown-item {
+          font-weight: 600 !important;
+          transition: all 0.3s ease !important;
+          width: 100%;
+          &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.3);
+          }
+        }
+      }
     }
+  }
 }

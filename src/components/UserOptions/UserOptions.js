@@ -17,6 +17,7 @@ const UserOptions = () => {
     if (option === "profile") {
       navigate("/user/profile");
     }
+    if (option === "manage") navigate("/system/admin");
   };
   return (
     <div className="user-options-container dropdown">
@@ -39,6 +40,12 @@ const UserOptions = () => {
             User's Profile
           </li>
           <li className="dropdown-item">User's course</li>
+          {user && user.role === "R1" && (
+            <li className="dropdown-item" onClick={() => handleChooseOption("manage")}>
+              Management system
+            </li>
+          )}
+
           <li className="dropdown-item" onClick={() => handleChooseOption("sign-out")}>
             Sign Out
           </li>

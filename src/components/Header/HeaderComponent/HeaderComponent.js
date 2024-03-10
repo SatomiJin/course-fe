@@ -1,10 +1,13 @@
 import { useState } from "react";
-
-import ".//HeaderComponent.scss";
-import * as constants from "../../../constant";
+import { useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
+
+import LoginButtonComponent from "../../LoginButtonComponent/LoginButtonComponent";
+import "./HeaderComponent.scss";
+import * as constants from "../../../constant";
 import User from "../../User/User";
 function HeaderComponent() {
+  let user = useSelector((state) => state.user);
   let navigate = useNavigate();
   let location = useLocation();
   let [activeNav, setActiveNav] = useState({
@@ -43,7 +46,7 @@ function HeaderComponent() {
             </ul>
           </div>
           <div className="header-nav-right col-4">
-            <User />
+            {user && (user?.firstName || user?.lastName) ? <User /> : <LoginButtonComponent />}
           </div>
         </div>
       </div>

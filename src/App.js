@@ -6,6 +6,7 @@ import { jwtDecode } from "jwt-decode";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import AdminLayout from "./components/Layout/AdminLayout";
 import OnlyHeader from "./components/Layout/OnlyHeader";
 import DefaultLayout from "./components/Layout/DefaultLayout";
 import { resetUser, updateUser } from "./redux/Slides/userSlide";
@@ -15,7 +16,6 @@ import * as UserService from "./service/UserService";
 function App() {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
-
   const handleDecoded = () => {
     let storageData = (user && user.access_token) || localStorage.getItem("access_token");
     let decoded = {};
@@ -39,7 +39,9 @@ function App() {
     let res = await UserService.getDetailUser({ email, token });
     dispatch(updateUser({ ...res.data, access_token: token, refreshToken: refreshToken }));
   };
-
+  // useEffect(() => {
+  //   if()
+  // }, [user]);
   UserService.axiosJWT.interceptors.request.use(
     async (config) => {
       const currentTime = new Date();
@@ -61,19 +63,26 @@ function App() {
       return Promise.reject(err);
     }
   );
-
   return (
     <div className="App">
       <Router>
         <Routes>
           {routes.map((item, index) => {
             let Page = item.page;
+            let authUser = !item.isPrivate || user.role === "R1";
+            let checkLogin = !item.isLogin || user.email !== "";
             let Layout =
-              item.isShowHeader && item.isShowFooter ? DefaultLayout : item.isShowHeader ? OnlyHeader : Fragment;
+              item.isShowHeader && item.isShowFooter
+                ? DefaultLayout
+                : item.isShowHeader
+                ? OnlyHeader
+                : item.isShowNavBar
+                ? AdminLayout
+                : Fragment;
             return (
               <Route
                 key={index}
-                path={item.path}
+                path={item.isLogin ? (checkLogin && authUser ? item.path : "") : item.path}
                 element={
                   <Layout>
                     <Page />
@@ -85,7 +94,7 @@ function App() {
         </Routes>
       </Router>
       <ToastContainer
-        position="bottom-right"
+        position="top-center"
         autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
